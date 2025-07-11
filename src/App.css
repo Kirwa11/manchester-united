@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.navbar {
+  background: linear-gradient(90deg, #da291c 70%, #e50914 100%);
+  padding: 0.7rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.10);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(218, 41, 28, 0.10);
+}
+
+.navbar-title {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a:focus {
+  background: #fff;
+  color: #da291c;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .navbar-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.7rem;
+  }
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+  .navbar-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+.home {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 3rem 4rem;
+  border-radius: 18px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+}
+
+.overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.overlay .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #e50914;
+  font-weight: 600;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  background: #f7f7f7;
+  padding: 40px 0;
+}
+
+.about-card {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+  padding: 2.5rem 2rem;
+  max-width: 900px;
+  width: 100%;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.about-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(218, 41, 28, 0.12);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-content p {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+}
+
+.about-fact {
+  margin-top: 1.2rem;
+  background: #da291c;
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 2px 8px rgba(218, 41, 28, 0.10);
+}
+.player-card {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.12);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.player-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+}
+.player-card h3 {
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #da291c;
+}
+.player-card p {
+  margin: 0.3rem 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+.rating-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.rating-bar {
+  width: 80px;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.rating-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #da291c 60%, #e50914 100%);
+  border-radius: 6px 0 0 6px;
+  transition: width 0.3s;
+}
+.rating-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.fixtures-page {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  min-height: 80vh;
+}
+
+.fixtures-page h2 {
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.fixtures-table-container {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.10);
+  overflow-x: auto;
+  padding: 1.5rem;
+}
+
+.fixtures-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fixtures-table th,
+.fixtures-table td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+}
+
+.fixtures-table th {
+  background: #da291c;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.fixtures-table tr {
+  transition: background 0.2s;
+}
+
+.fixtures-table tbody tr:hover {
+  background: #fbeaea;
+}
+
+.opponent {
+  font-weight: 600;
+  color: #e50914;
+}
+
+@media (max-width: 700px) {
+  .fixtures-table-container {
+    padding: 0.5rem;
+  }
+  .fixtures-table th,
+  .fixtures-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.98rem;
+  }
+}
+.news-page {
+  padding: 2rem 0;
+  background: #f7f7f7;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-page h1 {
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.news-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.10);
+  padding: 1.5rem 1.2rem;
+  max-width: 340px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.news-item:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+}
+
+.news-item h2 {
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.news-date {
+  font-size: 0.95rem;
+  color: #888;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.news-summary {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.5rem 0 0 0;
+  flex: 1;
+}
+.contact-page {
+  min-height: 80vh;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contact-page h2 {
+  color: #da291c;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.10);
+  padding: 2rem 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  transition: border 0.2s;
+  background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #da291c;
+  outline: none;
+  background: #fff;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #da291c 70%, #e50914 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.contact-form button:hover {
+  background: #fff;
+  color: #da291c;
+  border: 1.5px solid #da291c;
+}
