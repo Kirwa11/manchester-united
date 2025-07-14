@@ -1,7 +1,6 @@
 import React from "react";
 import bgg from '../assets/bgg.jpeg';
 
-
 const Home = () => (
     <div className="home" style={{ backgroundImage: `url(${bgg})` }}>
         <div className="overlay">
