@@ -27,5 +27,6 @@ export const players = [
     { id: 32, number:44, image: require('../assets/players/dan.jpeg'), name: "Daniel Gore", position: "Midfielder", nationality: "England" },
     { id: 33, number:36, image: require('../assets/players/ethan.jpeg'), name: "Ethan Wheatley", position: "Forward", nationality: "England" },
     { id: 34, number:32, image: require('../assets/players/obi.jpeg'), name: "Chido Obi", position: "Forward", nationality: "England" },
+    { id: 35, number:19, image: require('../assets/players/mbeumo.jpg'), name: "Bryan Mbeumo", position: "Forward", nationality: "Cameroon" },
 ];
 
