@@ -21,7 +21,7 @@ export const players = [
     { id: 26, number:26, image: require('../assets/players/haven.jpeg'), name: "Ayden Haven", position: "Defender", nationality: "England" },
     { id: 27, number:33, image: require('../assets/players/tyler.jpeg'), name: "Tyler Fredricson", position: "Defender", nationality: "England" },
     { id: 28, number:41, image: require('../assets/players/amass.jpeg'), name: "Harry Amass", position: "Defender", nationality: "England" },
-    { id: 29, number:12, image: require('../assets/players/diego.jpeg'), name: "Diego León", position: "Defender", nationality: "Paraguay" },
+    { id: 29, number:35, image: require('../assets/players/diego.jpeg'), name: "Diego León", position: "Defender", nationality: "Paraguay" },
     { id: 30, number:37, image: require('../assets/players/minoo.jpeg'), name: "Kobbie Mainoo", position: "Midfielder", nationality: "England" },
     { id: 31, number:43, image: require('../assets/players/toby.jpeg'), name: "Toby Collyer", position: "Midfielder", nationality: "England" },
     { id: 32, number:44, image: require('../assets/players/dan.jpeg'), name: "Daniel Gore", position: "Midfielder", nationality: "England" },
